@@ -1,0 +1,68 @@
+<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId> 
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//	@Override
+//	public String addCartItem(Long customerId, AddItemRequest req) throws ProductNotFoundException {
+//	    Cart cart = cartRepository.findByCustomerId(customerId);
+//	    
+//	 
+//	    List<Product> products = productService.getProductById(req.getProductId());
+//
+//	    
+//	    for (Product product : products) {
+//	        CartItem isPresent = cartItemService.isCartItemExist(cart, product,req.size ,customerId);
+//
+//	        if (isPresent == null) {
+//	            CartItem cartItem = new CartItem();
+//	            cartItem.setProduct(product);
+//	            cartItem.setCart(cart);
+//	            cartItem.setQuantity(req.getQuantity());
+//	            cartItem.setSize(null);
+//	            cartItem.setCustomerId(customerId);
+//	            
+//	            
+//
+//	            double price = req.getQuantity() * product.getDiscountedPrice();
+//	            cartItem.setPrice(price);
+//	          
+//
+//	            CartItem createdCartItem = cartItemService.createCartItem(cartItem);
+//	            cart.getCartItems().add(createdCartItem);
+//	            
+//	             
+//	        }
+//	    }
+//
+//	    return "Item(s) Added To Cart";
+//	}
